@@ -1,6 +1,6 @@
 <package format="3">
   <name>conditional_deps</name>
-  <version>0.0.0</version>
+  <version>0.0.1</version>
   <description>
     A package to test conditional dependencies.
   </description>
@@ -27,9 +27,9 @@
   <doc_depend condition="1 == 1">good_doc_depend</doc_depend>
   <test_depend condition="0 == 1">bad_test_depend</test_depend>
   <test_depend condition="1 == 1">good_test_depend</test_depend>
-  <conflict condition="0 == 1">bad_conflict</conflict>
+  <!--<conflict condition="0 == 1">bad_conflict</conflict>-->
   <conflict condition="1 == 1">good_conflict</conflict>
-  <replace condition="0 == 1">bad_replace</replace>
+  <!--<replace condition="0 == 1">bad_replace</replace>-->
   <replace condition="1 == 1">good_replace</replace>
 
   <export>
